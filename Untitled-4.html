@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        figure {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .features {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Áo Bóng Đá</h1>
+    <p>Chơi như một nhà vô địch, mặc như một ngôi sao!</p>
+</div>
+
+<div class="container">
+    <h2>Mẫu áo CLB Real Madrid</h2>
+    <figure>
+        <img src="data:image/jpeg;base64,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" alt="Sản phẩm XYZ">
+        <figcaption>Áo read madrid sân nhà - Mỗi chiếc áo là một câu chuyện chiến thắng!</figcaption>
+    </figure>
+    <p>Áo bóng đá chuyên nghiệp của chúng tôi được thiết kế để mang đến sự thoải mái, hiệu suất tối ưu và phong cách ấn tượng cho mọi cầu thủ. Với chất liệu cao cấp và công nghệ tiên tiến, sản phẩm này là lựa chọn hoàn hảo cho những ai đam mê môn thể thao vua.</p>
+
+    <h2>Công dụng</h2>
+    <ul class="features">
+        <li>Thoải mái và linh hoạt</li>
+        <li>Hút ẩm và khô nhanh</li>
+        <li>Bảo vệ cơ thể</li>
+        <li>Nhận diện đội bóng</li>
+    </ul>
+
+    <h2>Bảng giá</h2>
+    <table>
+        <tr>
+            <th>Gói</th>
+            <th>Giá</th>
+            <th>Thời gian sử dụng</th>
+        </tr>
+        <tr>
+            <td>Cơ bản(1 áo)</td>
+            <td>100.000 VNĐ/áo</td>
+            <td>bảo hành 6 tháng</td>
+        </tr>
+        <tr>
+            <td>đặt theo đội</td>
+            <td>90.000 VNĐ/áo</td>
+            <td>bảo hành 6 tháng</td>
+        </tr>
+    </table>
+
+    <h2>Liên hệ với chúng tôi</h2>
+    <form>
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Tin nhắn:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Gửi</button>
+    </form>
+</div>
+
+</body>
+</html>
